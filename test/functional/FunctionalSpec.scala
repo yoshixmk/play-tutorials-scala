@@ -1,5 +1,7 @@
 package functional
 
+import akka.actor.ActorSystem
+import akka.stream.{ActorMaterializer, Materializer}
 import controllers.{WidgetController, routes}
 import org.scalatest.concurrent.ScalaFutures
 import org.scalatestplus.play.PlaySpec
@@ -34,7 +36,10 @@ class FunctionalSpec extends PlaySpec with GuiceOneAppPerSuite with Injecting wi
       val request = FakeRequest(routes.WidgetController.createWidget())
         .withFormUrlEncodedBody("name" -> "foo", "price" -> "100")
         .withCSRFToken
-      val futureResult: Future[Result] = controller.createWidget().apply(request)
+
+      implicit val sys = ActorSystem("MyTest")
+      implicit val mat = ActorMaterializer()
+      val futureResult: Future[Result] = controller.createWidget.apply(request).run
 
       // And we can get the results out using Scalatest's "Futures" trait, which gives us whenReady
       whenReady(futureResult) { result =>
