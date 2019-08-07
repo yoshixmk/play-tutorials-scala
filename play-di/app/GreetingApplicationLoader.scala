@@ -1,4 +1,3 @@
-
 import _root_.controllers.AssetsComponents
 import com.softwaremill.macwire._
 import play.api.ApplicationLoader.Context
@@ -16,7 +15,7 @@ class GreetingApplicationLoader extends ApplicationLoader {
 }
 
 class GreetingComponents(context: Context) extends BuiltInComponentsFromContext(context)
-//  with GreetingModule
+  with GreetingModule
   with AssetsComponents
   with I18nComponents 
   with play.filters.HttpFiltersComponents {
