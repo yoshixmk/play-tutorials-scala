@@ -1,7 +1,11 @@
 import play.api.libs.json.Json
 
-case class Greeting(id: Int = -1, message: String, name: String)
+package object models {
 
-object Greeting {
-  implicit val GreetingFormat = Json.format[Greeting]
+  case class Greeting(id: Int = -1, message: String, name: String)
+
+  object Greeting {
+    implicit val GreetingFormat = Json.format[Greeting]
+  }
+
 }
