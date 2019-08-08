@@ -4,6 +4,7 @@ import play.api.ApplicationLoader.Context
 import play.api._
 import play.api.i18n._
 import play.api.routing.Router
+import router.Routes
 
 /**
   * Application loader that wires up the application dependencies using Macwire
@@ -24,7 +25,6 @@ class GreetingComponents(context: Context) extends BuiltInComponentsFromContext(
   }
 
   lazy val router: Router = {
-    // add the prefix string in local scope for the Routes constructor
     val prefix: String = "/"
     wire[Routes]
   }
