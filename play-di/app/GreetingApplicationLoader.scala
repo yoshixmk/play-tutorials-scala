@@ -14,7 +14,7 @@ class GreetingApplicationLoader extends ApplicationLoader {
 }
 
 class GreetingComponents(context: Context) extends BuiltInComponentsFromContext(context)
-  with GreetingModule
+  with GreetingModule //
   with AssetsComponents
   with I18nComponents
   with play.filters.HttpFiltersComponents {
@@ -26,6 +26,6 @@ class GreetingComponents(context: Context) extends BuiltInComponentsFromContext(
 
   lazy val router: Router = {
     val prefix: String = "/"
-    wire[Routes]
+    wire[Routes] //
   }
 }
