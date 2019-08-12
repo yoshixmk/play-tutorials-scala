@@ -107,7 +107,7 @@ class HomeController @Inject()(val controllerComponents: ControllerComponents, i
   private def originMatches(origin: String): Boolean = {
     try {
       val url = new URI(origin)
-      url.getHost == "localhost" &&
+      (url.getHost == "localhost" || url.getHost == "192.168.100.102") &&
         (url.getPort match { case 9000 | 19001 => true; case _ => false })
     } catch {
       case e: Exception => false
