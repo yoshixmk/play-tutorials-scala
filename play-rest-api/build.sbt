@@ -4,7 +4,7 @@ import play.sbt.PlaySettings
 lazy val root = (project in file("."))
   .enablePlugins(PlayService, PlayLayoutPlugin, Common)
   .settings(
-    name := "play-scala-rest-api-example",
+    name := "play-rest-api",
     version := "2.7.x",
     scalaVersion := "2.13.0",
     libraryDependencies ++= Seq(
