@@ -31,7 +31,7 @@ class PostResourceHandler @Inject()(
       implicit mc: MarkerContext): Future[PostResource] = {
     val data = PostData(PostId("999"), postInput.title, postInput.body)
     // We don't actually create the post, so return what we have
-    postRepository.create(data).map { id =>
+    postRepository.create(data).map { _ =>
       createPostResource(data)
     }
   }
@@ -47,9 +47,9 @@ class PostResourceHandler @Inject()(
   }
 
   def find(implicit mc: MarkerContext): Future[Iterable[PostResource]] = {
-    postRepository.list().map { postDataList =>
-      postDataList.map(postData => createPostResource(postData))
-    }
+    for {
+      postDataList <- postRepository.list()
+    } yield postDataList.map(createPostResource)
   }
 
   private def createPostResource(p: PostData): PostResource = {

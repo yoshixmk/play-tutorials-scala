@@ -28,11 +28,8 @@ class RequestHandler @Inject()(webCommands: WebCommands,
       request: RequestHeader): (RequestHeader, Handler) = {
     super.handlerForRequest {
       // ensures that REST API does not need a trailing "/"
-      if (isREST(request)) {
-        addTrailingSlash(request)
-      } else {
-        request
-      }
+      if (isREST(request)) addTrailingSlash(request)
+      else request
     }
   }
 
@@ -45,18 +42,11 @@ class RequestHandler @Inject()(webCommands: WebCommands,
 
   private def addTrailingSlash(origReq: RequestHeader): RequestHeader = {
     if (!origReq.path.endsWith("/")) {
-      val path = origReq.path + "/"
-      if (origReq.rawQueryString.isEmpty) {
-        origReq.withTarget(
-          RequestTarget(path = path, uriString = path, queryString = Map())
-        )
-      } else {
-        origReq.withTarget(
-          RequestTarget(path = path,
+      origReq.withTarget(
+          RequestTarget(path = origReq.path + "/",
                         uriString = origReq.uri,
                         queryString = origReq.queryString)
         )
-      }
     } else {
       origReq
     }
