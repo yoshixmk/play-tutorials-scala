@@ -13,6 +13,7 @@ lazy val root = (project in file("."))
       "net.logstash.logback" % "logstash-logback-encoder" % "5.2",
       "io.lemonlabs" %% "scala-uri" % "1.4.10",
       "net.codingwell" %% "scala-guice" % "4.2.5",
+      "io.dropwizard.metrics" % "metrics-core" % "4.1.0",
       "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.3" % Test
     ),
   )
