@@ -1,0 +1,131 @@
+{"@timestamp":"2019-08-11T21:52:14.844+09:00","message":"Slf4jLogger started"}
+{"@timestamp":"2019-08-11T21:52:15.044+09:00","message":"Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):\n\n    play.filters.csrf.CSRFFilter\n    play.filters.headers.SecurityHeadersFilter\n    play.filters.hosts.AllowedHostsFilter\n    filters.ContentSecurityPolicyFilter\n"}
+{"@timestamp":"2019-08-11T21:52:15.052+09:00","message":"Application started (Dev) (no global state)"}
+{"@timestamp":"2019-08-11T21:54:20.364+09:00","message":"Slf4jLogger started"}
+{"@timestamp":"2019-08-11T21:54:20.569+09:00","message":"Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):\n\n    play.filters.csrf.CSRFFilter\n    play.filters.headers.SecurityHeadersFilter\n    play.filters.hosts.AllowedHostsFilter\n    filters.ContentSecurityPolicyFilter\n"}
+{"@timestamp":"2019-08-11T21:54:20.579+09:00","message":"Application started (Dev) (no global state)"}
+{"@timestamp":"2019-08-11T21:54:20.910+09:00","message":"decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted."}
+{"@timestamp":"2019-08-11T21:54:20.911+09:00","message":"The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message."}
+{"@timestamp":"2019-08-11T21:54:21.012+09:00","message":"index: ","host":"localhost:9000","path":"/"}
+{"@timestamp":"2019-08-11T21:54:21.183+09:00","message":"decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted."}
+{"@timestamp":"2019-08-11T21:54:21.183+09:00","message":"The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message."}
+{"@timestamp":"2019-08-11T21:54:21.183+09:00","message":"decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted."}
+{"@timestamp":"2019-08-11T21:54:21.183+09:00","message":"The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message."}
+{"@timestamp":"2019-08-11T21:54:21.183+09:00","message":"decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted."}
+{"@timestamp":"2019-08-11T21:54:21.183+09:00","message":"decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted."}
+{"@timestamp":"2019-08-11T21:54:21.183+09:00","message":"decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted."}
+{"@timestamp":"2019-08-11T21:54:21.183+09:00","message":"The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message."}
+{"@timestamp":"2019-08-11T21:54:21.183+09:00","message":"The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message."}
+{"@timestamp":"2019-08-11T21:54:21.183+09:00","message":"The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message."}
+{"@timestamp":"2019-08-11T21:54:21.184+09:00","message":"decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted."}
+{"@timestamp":"2019-08-11T21:54:21.184+09:00","message":"The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message."}
+{"@timestamp":"2019-08-11T21:54:21.263+09:00","message":"decode: cookie has invalid signature! message = JWT signature does not match locally computed signature. JWT validity cannot be asserted and should not be trusted."}
+{"@timestamp":"2019-08-11T21:54:21.263+09:00","message":"The JWT signature in the cookie does not match the locally computed signature with the server. This usually indicates the browser has a leftover cookie from another Play application, so clearing cookies may resolve this error message."}
+{"@timestamp":"2019-08-11T21:54:54.512+09:00","message":"index: ","host":"localhost:9000","path":"/"}
+{"@timestamp":"2019-08-11T21:55:35.106+09:00","message":"index: ","host":"localhost:9000","path":"/"}
+{"@timestamp":"2019-08-12T13:40:46.610+09:00","message":"index: ","host":"localhost:9000","path":"/"}
+{"@timestamp":"2019-08-12T13:49:35.621+09:00","message":"Stopping server..."}
+{"@timestamp":"2019-08-12T13:54:49.224+09:00","message":"Slf4jLogger started"}
+{"@timestamp":"2019-08-12T13:54:49.623+09:00","message":"Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):\n\n    play.filters.csrf.CSRFFilter\n    play.filters.headers.SecurityHeadersFilter\n    play.filters.hosts.AllowedHostsFilter\n    filters.ContentSecurityPolicyFilter\n"}
+{"@timestamp":"2019-08-12T13:54:49.634+09:00","message":"Application started (Dev) (no global state)"}
+{"@timestamp":"2019-08-12T13:57:02.087+09:00","message":"Slf4jLogger started"}
+{"@timestamp":"2019-08-12T13:57:02.398+09:00","message":"Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):\n\n    play.filters.csrf.CSRFFilter\n    play.filters.headers.SecurityHeadersFilter\n    play.filters.hosts.AllowedHostsFilter\n    filters.ContentSecurityPolicyFilter\n"}
+{"@timestamp":"2019-08-12T13:57:02.410+09:00","message":"Application started (Dev) (no global state)"}
+{"@timestamp":"2019-08-12T13:57:02.809+09:00","message":"index: ","host":"localhost:9000","path":"/"}
+{"@timestamp":"2019-08-12T13:57:03.447+09:00","message":"Checking the ORIGIN ","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T13:57:03.450+09:00","message":"originCheck: originValue = http://localhost:9000","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T13:57:12.248+09:00","message":"[source] Element: aaa"}
+{"@timestamp":"2019-08-12T14:00:21.364+09:00","message":"Stopping server..."}
+{"@timestamp":"2019-08-12T14:04:36.503+09:00","message":"Slf4jLogger started"}
+{"@timestamp":"2019-08-12T14:04:36.723+09:00","message":"Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):\n\n    play.filters.csrf.CSRFFilter\n    play.filters.headers.SecurityHeadersFilter\n    play.filters.hosts.AllowedHostsFilter\n    filters.ContentSecurityPolicyFilter\n"}
+{"@timestamp":"2019-08-12T14:04:36.735+09:00","message":"Application started (Dev) (no global state)"}
+{"@timestamp":"2019-08-12T14:04:37.015+09:00","message":"index: ","host":"localhost:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:04:37.015+09:00","message":"index: ","host":"localhost:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:04:37.015+09:00","message":"index: ","host":"localhost:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:04:37.520+09:00","message":"Checking the ORIGIN ","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:04:37.522+09:00","message":"originCheck: originValue = http://localhost:9000","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:04:37.630+09:00","message":"Checking the ORIGIN ","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:04:37.630+09:00","message":"originCheck: originValue = http://localhost:9000","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:04:52.808+09:00","message":"[source] Element: aaa"}
+{"@timestamp":"2019-08-12T14:05:00.779+09:00","message":"[source] Element: bbb"}
+{"@timestamp":"2019-08-12T14:08:36.399+09:00","message":"Host not allowed: 192.168.100.102:9000"}
+{"@timestamp":"2019-08-12T14:08:36.550+09:00","message":"Host not allowed: 192.168.100.102:9000"}
+{"@timestamp":"2019-08-12T14:13:35.383+09:00","message":"Slf4jLogger started"}
+{"@timestamp":"2019-08-12T14:13:35.476+09:00","message":"Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):\n\n    play.filters.csrf.CSRFFilter\n    play.filters.headers.SecurityHeadersFilter\n    play.filters.hosts.AllowedHostsFilter\n    filters.ContentSecurityPolicyFilter\n"}
+{"@timestamp":"2019-08-12T14:13:35.481+09:00","message":"Application started (Dev) (no global state)"}
+{"@timestamp":"2019-08-12T14:13:35.492+09:00","message":"Host not allowed: 192.168.100.102:9000"}
+{"@timestamp":"2019-08-12T14:13:35.763+09:00","message":"Host not allowed: 192.168.100.102:9000"}
+{"@timestamp":"2019-08-12T14:13:56.474+09:00","message":"Slf4jLogger started"}
+{"@timestamp":"2019-08-12T14:13:56.567+09:00","message":"Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):\n\n    play.filters.csrf.CSRFFilter\n    play.filters.headers.SecurityHeadersFilter\n    play.filters.hosts.AllowedHostsFilter\n    filters.ContentSecurityPolicyFilter\n"}
+{"@timestamp":"2019-08-12T14:13:56.570+09:00","message":"Application started (Dev) (no global state)"}
+{"@timestamp":"2019-08-12T14:13:56.579+09:00","message":"Host not allowed: 192.168.100.102:9000"}
+{"@timestamp":"2019-08-12T14:13:56.724+09:00","message":"Host not allowed: 192.168.100.102:9000"}
+{"@timestamp":"2019-08-12T14:14:10.131+09:00","message":"Slf4jLogger started"}
+{"@timestamp":"2019-08-12T14:14:10.210+09:00","message":"Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):\n\n    play.filters.csrf.CSRFFilter\n    play.filters.headers.SecurityHeadersFilter\n    play.filters.hosts.AllowedHostsFilter\n    filters.ContentSecurityPolicyFilter\n"}
+{"@timestamp":"2019-08-12T14:14:10.213+09:00","message":"Application started (Dev) (no global state)"}
+{"@timestamp":"2019-08-12T14:14:10.227+09:00","message":"index: ","host":"192.168.100.102:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:14:10.557+09:00","message":"Checking the ORIGIN ","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:14:10.559+09:00","message":"originCheck: rejecting request because Origin header value http://192.168.100.102:9000 is not in the same origin","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:14:10.561+09:00","message":"Request GET /chat failed same origin check"}
+{"@timestamp":"2019-08-12T14:15:57.781+09:00","message":"index: ","host":"localhost:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:15:57.949+09:00","message":"Checking the ORIGIN ","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:15:57.951+09:00","message":"originCheck: originValue = http://localhost:9000","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:16:43.681+09:00","message":"index: ","host":"192.168.100.102:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:16:43.938+09:00","message":"Checking the ORIGIN ","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:16:43.938+09:00","message":"originCheck: rejecting request because Origin header value http://192.168.100.102:9000 is not in the same origin","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:16:43.938+09:00","message":"Request GET /chat failed same origin check"}
+{"@timestamp":"2019-08-12T14:16:59.684+09:00","message":"[source] Element: Hello"}
+{"@timestamp":"2019-08-12T14:17:51.419+09:00","message":"index: ","host":"192.168.100.102:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:17:51.624+09:00","message":"Checking the ORIGIN ","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:17:51.624+09:00","message":"originCheck: rejecting request because Origin header value http://192.168.100.102:9000 is not in the same origin","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:17:51.624+09:00","message":"Request GET /chat failed same origin check"}
+{"@timestamp":"2019-08-12T14:18:16.740+09:00","message":"index: ","host":"192.168.100.102:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:18:16.974+09:00","message":"Checking the ORIGIN ","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:18:16.974+09:00","message":"originCheck: rejecting request because Origin header value http://192.168.100.102:9000 is not in the same origin","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:18:16.974+09:00","message":"Request GET /chat failed same origin check"}
+{"@timestamp":"2019-08-12T14:21:31.869+09:00","message":"Slf4jLogger started"}
+{"@timestamp":"2019-08-12T14:21:31.962+09:00","message":"Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):\n\n    play.filters.csrf.CSRFFilter\n    play.filters.headers.SecurityHeadersFilter\n    play.filters.hosts.AllowedHostsFilter\n    filters.ContentSecurityPolicyFilter\n"}
+{"@timestamp":"2019-08-12T14:21:31.965+09:00","message":"Application started (Dev) (no global state)"}
+{"@timestamp":"2019-08-12T14:21:31.987+09:00","message":"index: ","host":"192.168.100.102:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:21:32.265+09:00","message":"Checking the ORIGIN ","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:21:32.270+09:00","message":"originCheck: rejecting request because Origin header value http://192.168.100.102:9000 is not in the same origin","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:21:32.271+09:00","message":"Request GET /chat failed same origin check"}
+{"@timestamp":"2019-08-12T14:24:19.081+09:00","message":"Slf4jLogger started"}
+{"@timestamp":"2019-08-12T14:24:19.143+09:00","message":"Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):\n\n    play.filters.csrf.CSRFFilter\n    play.filters.headers.SecurityHeadersFilter\n    play.filters.hosts.AllowedHostsFilter\n    filters.ContentSecurityPolicyFilter\n"}
+{"@timestamp":"2019-08-12T14:24:19.146+09:00","message":"Application started (Dev) (no global state)"}
+{"@timestamp":"2019-08-12T14:24:19.158+09:00","message":"index: ","host":"localhost:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:24:19.432+09:00","message":"Checking the ORIGIN ","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:24:19.434+09:00","message":"originCheck: originValue = http://localhost:9000","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:24:25.499+09:00","message":"[source] Element: ttt"}
+{"@timestamp":"2019-08-12T14:24:34.018+09:00","message":"index: ","host":"localhost:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:24:34.188+09:00","message":"Checking the ORIGIN ","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:24:34.189+09:00","message":"originCheck: originValue = http://localhost:9000","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:24:43.158+09:00","message":"[source] Element: foo"}
+{"@timestamp":"2019-08-12T14:24:57.409+09:00","message":"index: ","host":"192.168.100.102:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:24:57.633+09:00","message":"Checking the ORIGIN ","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:24:57.635+09:00","message":"originCheck: rejecting request because Origin header value http://192.168.100.102:9000 is not in the same origin","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:24:57.637+09:00","message":"Request GET /chat failed same origin check"}
+{"@timestamp":"2019-08-12T14:33:00.061+09:00","message":"Slf4jLogger started"}
+{"@timestamp":"2019-08-12T14:33:00.296+09:00","message":"Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):\n\n    play.filters.csrf.CSRFFilter\n    play.filters.headers.SecurityHeadersFilter\n    play.filters.hosts.AllowedHostsFilter\n    filters.ContentSecurityPolicyFilter\n"}
+{"@timestamp":"2019-08-12T14:33:00.307+09:00","message":"Application started (Dev) (no global state)"}
+{"@timestamp":"2019-08-12T14:33:00.588+09:00","message":"index: ","host":"localhost:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:33:01.185+09:00","message":"Checking the ORIGIN ","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:33:01.187+09:00","message":"originCheck: originValue = http://localhost:9000","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:35:02.585+09:00","message":"Slf4jLogger started"}
+{"@timestamp":"2019-08-12T14:35:02.677+09:00","message":"Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):\n\n    play.filters.csrf.CSRFFilter\n    play.filters.headers.SecurityHeadersFilter\n    play.filters.hosts.AllowedHostsFilter\n    filters.ContentSecurityPolicyFilter\n"}
+{"@timestamp":"2019-08-12T14:35:02.681+09:00","message":"Application started (Dev) (no global state)"}
+{"@timestamp":"2019-08-12T14:35:02.699+09:00","message":"index: ","host":"192.168.100.102:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:35:03.100+09:00","message":"Checking the ORIGIN ","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:35:03.101+09:00","message":"originCheck: originValue = http://192.168.100.102:9000","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:35:37.002+09:00","message":"index: ","host":"192.168.100.102:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:35:37.237+09:00","message":"Checking the ORIGIN ","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:35:37.237+09:00","message":"originCheck: originValue = http://192.168.100.102:9000","host":"192.168.100.102:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:35:40.116+09:00","message":"[source] Element: ghg"}
+{"@timestamp":"2019-08-12T14:35:45.276+09:00","message":"[source] Element: jhh"}
+{"@timestamp":"2019-08-12T14:35:53.819+09:00","message":"index: ","host":"localhost:9000","path":"/"}
+{"@timestamp":"2019-08-12T14:35:53.963+09:00","message":"Checking the ORIGIN ","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:35:53.963+09:00","message":"originCheck: originValue = http://localhost:9000","host":"localhost:9000","path":"/chat"}
+{"@timestamp":"2019-08-12T14:35:58.863+09:00","message":"[source] Element: こんにちは"}
+{"@timestamp":"2019-08-12T14:36:01.879+09:00","message":"[source] Element: nkn"}
+{"@timestamp":"2019-08-12T14:36:04.498+09:00","message":"[source] Element: m,,"}
+{"@timestamp":"2019-08-12T14:36:50.316+09:00","message":"[source] Element: go mi su te te"}

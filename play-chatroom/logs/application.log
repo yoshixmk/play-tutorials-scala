@@ -1,0 +1,36 @@
+2019-08-12 14:33:00,061 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-5 - Slf4jLogger started
+2019-08-12 14:33:00,296 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-13 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ContentSecurityPolicyFilter
+
+2019-08-12 14:33:00,307 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-13 - Application started (Dev) (no global state)
+2019-08-12 14:33:00,588 [INFO] from controllers.HomeController in application-akka.actor.default-dispatcher-5 - index: 
+2019-08-12 14:33:01,185 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-13 - Checking the ORIGIN 
+2019-08-12 14:33:01,187 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-13 - originCheck: originValue = http://localhost:9000
+2019-08-12 14:35:02,585 [INFO] from akka.event.slf4j.Slf4jLogger in application-akka.actor.default-dispatcher-6 - Slf4jLogger started
+2019-08-12 14:35:02,677 [INFO] from play.api.http.EnabledFilters in play-dev-mode-akka.actor.default-dispatcher-17 - Enabled Filters (see <https://www.playframework.com/documentation/latest/Filters>):
+
+    play.filters.csrf.CSRFFilter
+    play.filters.headers.SecurityHeadersFilter
+    play.filters.hosts.AllowedHostsFilter
+    filters.ContentSecurityPolicyFilter
+
+2019-08-12 14:35:02,681 [INFO] from play.api.Play in play-dev-mode-akka.actor.default-dispatcher-17 - Application started (Dev) (no global state)
+2019-08-12 14:35:02,699 [INFO] from controllers.HomeController in application-akka.actor.default-dispatcher-6 - index: 
+2019-08-12 14:35:03,100 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-14 - Checking the ORIGIN 
+2019-08-12 14:35:03,101 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-14 - originCheck: originValue = http://192.168.100.102:9000
+2019-08-12 14:35:37,002 [INFO] from controllers.HomeController in application-akka.actor.default-dispatcher-6 - index: 
+2019-08-12 14:35:37,237 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-38 - Checking the ORIGIN 
+2019-08-12 14:35:37,237 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-38 - originCheck: originValue = http://192.168.100.102:9000
+2019-08-12 14:35:40,116 [DEBUG] from controllers.HomeController in application-akka.actor.default-dispatcher-8 - [source] Element: ghg
+2019-08-12 14:35:45,276 [DEBUG] from controllers.HomeController in application-akka.actor.default-dispatcher-8 - [source] Element: jhh
+2019-08-12 14:35:53,819 [INFO] from controllers.HomeController in application-akka.actor.default-dispatcher-8 - index: 
+2019-08-12 14:35:53,963 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-41 - Checking the ORIGIN 
+2019-08-12 14:35:53,963 [DEBUG] from controllers.HomeController in play-dev-mode-akka.actor.default-dispatcher-41 - originCheck: originValue = http://localhost:9000
+2019-08-12 14:35:58,863 [DEBUG] from controllers.HomeController in application-akka.actor.default-dispatcher-8 - [source] Element: こんにちは
+2019-08-12 14:36:01,879 [DEBUG] from controllers.HomeController in application-akka.actor.default-dispatcher-8 - [source] Element: nkn
+2019-08-12 14:36:04,498 [DEBUG] from controllers.HomeController in application-akka.actor.default-dispatcher-8 - [source] Element: m,,
+2019-08-12 14:36:50,316 [DEBUG] from controllers.HomeController in application-akka.actor.default-dispatcher-16 - [source] Element: go mi su te te
