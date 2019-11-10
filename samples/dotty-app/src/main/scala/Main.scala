@@ -47,3 +47,16 @@ def help(id: UserName | Password) = {
     case Password(hash) => hash // lookupPassword(hash)
   }
 }
+
+// == Type Lambdas ==
+// 書換 type T = [X] =>> (X, X)
+type T[X] = (X, X)
+
+// == Match Types ==
+// 型パラメータを使って、一致させる。別の型に変換する処理まとまりそう
+type Elem[X] = X match {
+  case String => Char
+  case Array[t] => t
+  case Iterable[t] => t
+}
+
