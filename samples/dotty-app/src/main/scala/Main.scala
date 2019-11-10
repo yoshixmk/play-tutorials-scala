@@ -36,3 +36,14 @@ val x: A & B = new C
 val xChildren: List[A & B] = x.children
 // これはできない
 // val yChildren: List[C] = y.children
+
+// == Union Types ==
+case class UserName(name: String)
+case class Password(hash: String)
+
+def help(id: UserName | Password) = {
+  val user = id match {
+    case UserName(name) => name // lookupName(name)
+    case Password(hash) => hash // lookupPassword(hash)
+  }
+}
