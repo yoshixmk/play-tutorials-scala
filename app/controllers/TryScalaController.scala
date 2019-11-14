@@ -20,7 +20,7 @@ object TryScalaController extends Controller {
       )(TryScalaForm.apply)(TryScalaForm.unapply)
     )
 
-    val result = "ls -al" !
+    val output = Process("ls -al", new File("/tmp")).!!
     Ok(result)
   }
 }
