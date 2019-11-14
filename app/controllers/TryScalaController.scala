@@ -8,6 +8,8 @@ import play.api.data._
 import play.api.data.format.Formats._
 import sys.process._
 import form.TryScalaForm
+import play.api.data.Form
+import play.api.data.Form._
 
 import play.api.db._
 
@@ -20,7 +22,7 @@ object TryScalaController extends Controller {
       )(TryScalaForm.apply)(TryScalaForm.unapply)
     )
 
-    val output = Process("ls -al", new File("/tmp")).!!
+    val result = Process("ls -la").!!
     Ok(result)
   }
 }
