@@ -29,10 +29,11 @@ class HomeController @Inject()(cc: ControllerComponents) (implicit assetsFinder:
     import sys.process._
     import play.api.data._
     import play.api.data.Forms._
+    import form.TryScalaForm
 
     val form = Form(
       mapping(
-        "command" -> of[String]
+        "command" -> text
       )(TryScalaForm.apply)(TryScalaForm.unapply)
     )
 
