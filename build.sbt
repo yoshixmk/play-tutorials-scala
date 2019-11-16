@@ -1,17 +1,21 @@
-name := """play-getting-started"""
+name := """play-scala-starter-example"""
 
 version := "1.0-SNAPSHOT"
 
 lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
-scalaVersion := "2.11.7"
-libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.3" % Test
+resolvers += Resolver.sonatypeRepo("snapshots")
 
-libraryDependencies ++= Seq(
-  jdbc,
-  cache,
-  "org.postgresql" % "postgresql" % "9.4-1201-jdbc41",
-  ws
+scalaVersion := "2.13.1"
+
+libraryDependencies += guice
+libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.3" % Test
+libraryDependencies += "com.h2database" % "h2" % "1.4.199"
+
+scalacOptions ++= Seq(
+  "-feature",
+  "-deprecation",
+  "-Xfatal-warnings"
 )
 
 herokuAppName in Compile := "scala-getstart-yoshixmk"

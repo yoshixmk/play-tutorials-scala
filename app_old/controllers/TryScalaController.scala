@@ -10,8 +10,6 @@ import form.TryScalaForm
 import play.api.data._
 import play.api.data.Forms._
 
-import play.api.db._
-
 object TryScalaController extends Controller {
 
   def exec = Action {
