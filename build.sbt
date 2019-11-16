@@ -18,7 +18,6 @@ scalacOptions ++= Seq(
   "-Xfatal-warnings"
 )
 
-play.sbt.PlayImport.PlayKeys.includeDocumentation := false
 packageDoc in Compile := { new File(".") }
 
 herokuAppName in Compile := "scala-getstart-yoshixmk"
