@@ -15,10 +15,6 @@ import play.api.db._
 
 object TryScalaController extends Controller {
 
-  def apply(): TryScalaController = new TryScalaController() {
-    Process("sbt shell")
-  }
-
   def exec = Action {
     val form = Form(
       mapping(
@@ -26,8 +22,8 @@ object TryScalaController extends Controller {
       )(TryScalaForm.apply)(TryScalaForm.unapply)
     )
 
-    Process("ls -la").!!
-    val result = Process("print(\"hello\")").!!
+    // Process("ls -la").!!
+    val result = Process("sbt \"console print(\"hello\")\"").!!
     Ok(result)
   }
 }
