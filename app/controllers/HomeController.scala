@@ -3,6 +3,13 @@ package controllers
 import javax.inject._
 
 import play.api.mvc._
+import play.api._
+import play.api.data._
+import play.api.data.format.Formats._
+import sys.process._
+import play.api.data._
+import play.api.data.Forms._
+import form.TryScalaForm
 
 /**
  * This controller creates an `Action` to handle HTTP requests to the
@@ -23,13 +30,6 @@ class HomeController @Inject()(cc: ControllerComponents) (implicit assetsFinder:
   }
 
   def exec = Action {
-    import play.api._
-    import play.api.data._
-    import play.api.data.format.Formats._
-    import sys.process._
-    import play.api.data._
-    import play.api.data.Forms._
-    import form.TryScalaForm
 
     val form = Form(
       mapping(
@@ -37,8 +37,8 @@ class HomeController @Inject()(cc: ControllerComponents) (implicit assetsFinder:
       )(TryScalaForm.apply)(TryScalaForm.unapply)
     )
 
-    // Process("ls -la").!!
-    val result = Process("sbt \"console print(\"hello\")\"").!!
+    val result = Process("ls -la").!!
+    // val result = Process("sbt \"console print(\"hello\")\"").!!
     Ok(result)
   }
 }
