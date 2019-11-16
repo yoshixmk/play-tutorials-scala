@@ -22,4 +22,22 @@ class HomeController @Inject()(cc: ControllerComponents) (implicit assetsFinder:
     Ok(views.html.index("Your new application is ready."))
   }
 
+  def exec = Action {
+    import play.api._
+    import play.api.data._
+    import play.api.data.format.Formats._
+    import sys.process._
+    import play.api.data._
+    import play.api.data.Forms._
+
+    val form = Form(
+      mapping(
+        "command" -> of[String]
+      )(TryScalaForm.apply)(TryScalaForm.unapply)
+    )
+
+    // Process("ls -la").!!
+    val result = Process("sbt \"console print(\"hello\")\"").!!
+    Ok(result)
+  }
 }
