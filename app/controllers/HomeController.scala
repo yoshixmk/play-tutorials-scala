@@ -38,4 +38,14 @@ class HomeController @Inject()(cc: ControllerComponents)(implicit assetsFinder: 
     val result = Process(form.command).!!
     Ok(result)
   }
+
+  def startConsole = Action {
+    val result = Process("sbt run </dev/null >> console.log &").!!
+    Ok("console start")
+  }
+
+  def clearConsole = Action {
+    val result = Process("echo '' > console.log &").!!
+    Ok("clear console log")
+  }
 }

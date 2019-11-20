@@ -15,3 +15,9 @@ GET     /assets/*file               controllers.Assets.versioned(file)
 # on scala
 +nocsrf
 PUT    /try/exec     controllers.HomeController.exec
+
++nocsrf
+POST   /start/console     controllers.HomeController.startConsole
+
++nocsrf
+POST   /clear/log     controllers.HomeController.clearConsole
