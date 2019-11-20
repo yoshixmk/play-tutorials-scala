@@ -35,9 +35,15 @@ class HomeController @Inject()(cc: ControllerComponents)(implicit assetsFinder: 
         "command" -> text
       )(TryScalaForm.apply)(TryScalaForm.unapply)
     )
-    val data = form.bindFromRequest.getOrElse("ls -la")
-    val result = Process(data.command).!!
-    Ok(result)
+    val data = form.bindFromRequest.fold(
+      formWithErrors => {
+        BadRequest("bad request")
+      },
+      data => {
+        val result = Process(data.command).!!
+        Ok(result)
+      }
+    )
   }
 
   def startConsole = Action {
