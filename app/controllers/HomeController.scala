@@ -35,7 +35,8 @@ class HomeController @Inject()(cc: ControllerComponents)(implicit assetsFinder: 
         "command" -> text
       )(TryScalaForm.apply)(TryScalaForm.unapply)
     )
-    val data = form.bindFromRequest.fold(
+
+    form.bindFromRequest.fold(
       formWithErrors => BadRequest("bad request"),
       data => {
         val result = Process(data.command).!!
