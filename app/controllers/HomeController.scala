@@ -35,7 +35,8 @@ class HomeController @Inject()(cc: ControllerComponents)(implicit assetsFinder: 
         "command" -> text
       )(TryScalaForm.apply)(TryScalaForm.unapply)
     )
-    val result = Process(form.command).!!
+    val data = form.bindFromRequest.getOrElse("ls -la")
+    val result = Process(data.command).!!
     Ok(result)
   }
 
@@ -44,7 +45,12 @@ class HomeController @Inject()(cc: ControllerComponents)(implicit assetsFinder: 
     Ok("console start")
   }
 
-  def clearConsole = Action {
+  def getConsole =  Action {
+    val result = Process("cat console.log").!!
+    Ok(result)
+  }
+
+  def clearLog = Action {
     val result = Process("echo '' > console.log &").!!
     Ok("clear console log")
   }

@@ -17,7 +17,9 @@ GET     /assets/*file               controllers.Assets.versioned(file)
 PUT    /try/exec     controllers.HomeController.exec
 
 +nocsrf
-POST   /start/console     controllers.HomeController.startConsole
+POST   /console     controllers.HomeController.startConsole
+
+GET   /console      controllers.HomeController.getConsole
 
 +nocsrf
-POST   /clear/log     controllers.HomeController.clearConsole
+POST   /logs/clear     controllers.HomeController.clearLog
