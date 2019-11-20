@@ -29,16 +29,14 @@ class HomeController @Inject()(cc: ControllerComponents)(implicit assetsFinder: 
     Ok(views.html.index("Your new application is ready."))
   }
 
-  def exec = Action {
+  def exec = Action {implicit request =>
     val form = Form(
       mapping(
         "command" -> text
       )(TryScalaForm.apply)(TryScalaForm.unapply)
     )
     val data = form.bindFromRequest.fold(
-      formWithErrors => {
-        BadRequest("bad request")
-      },
+      formWithErrors => BadRequest("bad request"),
       data => {
         val result = Process(data.command).!!
         Ok(result)
