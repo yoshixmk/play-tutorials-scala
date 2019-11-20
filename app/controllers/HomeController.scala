@@ -16,7 +16,7 @@ import form.TryScalaForm
  * application's home page.
  */
 @Singleton
-class HomeController @Inject()(cc: ControllerComponents) (implicit assetsFinder: AssetsFinder)
+class HomeController @Inject()(cc: ControllerComponents)(implicit assetsFinder: AssetsFinder)
   extends AbstractController(cc) {
 
   /**
@@ -30,15 +30,12 @@ class HomeController @Inject()(cc: ControllerComponents) (implicit assetsFinder:
   }
 
   def exec = Action {
-
     val form = Form(
       mapping(
         "command" -> text
       )(TryScalaForm.apply)(TryScalaForm.unapply)
     )
-
-    val result = Process("ls -la").!!
-    // val result = Process("sbt \"console print(\"hello\")\"").!!
+    val result = Process(form.command).!!
     Ok(result)
   }
 }

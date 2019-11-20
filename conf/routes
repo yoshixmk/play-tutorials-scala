@@ -13,4 +13,5 @@ GET     /message                    controllers.AsyncController.message
 GET     /assets/*file               controllers.Assets.versioned(file)
 
 # on scala
-GET    /try/exec     controllers.HomeController.exec
++nocsrf
+PUT    /try/exec     controllers.HomeController.exec

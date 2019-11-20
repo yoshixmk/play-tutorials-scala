@@ -6,9 +6,11 @@ import play.api.mvc._
 import services.Counter
 
 @Singleton
-class CountController @Inject() (cc: ControllerComponents,
-                                 counter: Counter) extends AbstractController(cc) {
+class CountController @Inject()(cc: ControllerComponents,
+                                counter: Counter) extends AbstractController(cc) {
 
-  def count = Action { Ok(counter.nextCount().toString) }
+  def count = Action {
+    Ok(counter.nextCount().toString)
+  }
 
 }
