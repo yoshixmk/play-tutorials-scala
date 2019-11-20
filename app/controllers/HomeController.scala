@@ -46,17 +46,17 @@ class HomeController @Inject()(cc: ControllerComponents)(implicit assetsFinder: 
   }
 
   def startConsole = Action {
-    val result = Process("sbt run </dev/null >> console.log &").!!
+    val result = Process("nohup sbt console &").!!
     Ok("console start")
   }
 
   def getConsole =  Action {
-    val result = Process("cat console.log").!!
+    val result = Process("cat nohup.out").!!
     Ok(result)
   }
 
   def clearLog = Action {
-    val result = Process("echo '' > console.log &").!!
+    val result = Process("echo '' > nohup.out").!!
     Ok("clear console log")
   }
 }
