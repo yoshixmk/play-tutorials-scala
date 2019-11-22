@@ -25,7 +25,7 @@ GET   /console      controllers.HomeController.getConsole
 POST   /logs/clear     controllers.HomeController.clearLog
 
 +nocsrf
-POST   /decode     controllers.HomeController.encode
+POST   /encode     controllers.HomeController.encode
 
 +nocsrf
 POST   /decode     controllers.HomeController.decode
