@@ -59,4 +59,23 @@ class HomeController @Inject()(cc: ControllerComponents)(implicit assetsFinder: 
     val result = Process("echo '' > nohup.out").!!
     Ok("clear console log")
   }
+
+  def encode = Action {
+    form.bindFromRequest.fold(
+      formWithErrors => BadRequest("bad request"),
+      data => {
+        import java.util.Base64
+        import java.nio.charset.StandardCharsets
+        Ok(Base64.getEncoder.encodeToString(data.command.getBytes(StandardCharsets.UTF_8)))
+      }
+    )
+  }
+  def decode = Action {
+    form.bindFromRequest.fold(
+      formWithErrors => BadRequest("bad request"),
+      data => {
+        Ok(new String(java.util.Base64.getDecoder.decode(data.command)))
+      }
+    )
+  }
 }
