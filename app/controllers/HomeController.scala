@@ -60,7 +60,7 @@ class HomeController @Inject()(cc: ControllerComponents)(implicit assetsFinder: 
     Ok("clear console log")
   }
 
-  def encode = Action {
+  def encode = Action {implicit request =>
     form.bindFromRequest.fold(
       formWithErrors => BadRequest("bad request"),
       data => {
@@ -70,7 +70,7 @@ class HomeController @Inject()(cc: ControllerComponents)(implicit assetsFinder: 
       }
     )
   }
-  def decode = Action {
+  def decode = Action {implicit request =>
     form.bindFromRequest.fold(
       formWithErrors => BadRequest("bad request"),
       data => {
